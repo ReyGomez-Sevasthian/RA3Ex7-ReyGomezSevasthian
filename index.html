@@ -54,14 +54,42 @@
     </div>
 
     <script>
+
+        //1
         let titol = document.querySelector("#titol-principal");
             titol.style.color = "blue"
 
+        //2
         let parraf = document.querySelector("#paragraf-hola")
             parraf.textContent = "Hola món"
-        
+        //3
         let imagen = document.querySelector("#imatge-canviant")
             imagen.setAttribute ("src", "https://www.pngmart.com/files/22/Mike-Wazowski-Meme-PNG-HD-Isolated.png")
+
+        //5
+            let boton = document.querySelector ("#boto-alerta");
+            let caixa = document.querySelector ("#caixa-estil");
+            boton.onclick = function() {
+                alert("Holaa, has pulsado el boton");
+                caixa.classList.toggle("dark-mode");
+            }
+
+        //6
+        let botonAlerta = document.querySelector ("#boto-toggle")
+            botonAlerta.addEventListener("click", function() {
+            alert("pulsaste el boton toggle");});
+        
+        //7
+        let botoAfegirItem = document.querySelector("#boto-afegir");
+        let llistaCompra = document.querySelector("#llista-compra");
+            botoAfegirItem.onclick = function(){
+                let nouitem = document.createElement("li");
+                nouitem.textContent = "formatge";
+                llistaCompra.appendChild(nouitem);}
+        //8
+        let cuadroColorSalmon = document.querySelector('#element-eliminar');
+            cuadroColorSalmon.onclick = function() {
+            cuadroColorSalmon.remove();} 
     </script>
 </body>
 </html>
