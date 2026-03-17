@@ -37,25 +37,30 @@
         caixa.classList.toggle("dark-mode");
     }
 
-//6 - Esdeveniments: Afegeix un addEventListener a un botó perquè tregui una alerta (alert).
-
-let botonAlerta = document.querySelector ("#boto-toggle")
-    botonAlerta.addEventListener("click", function() {
+### Ejercicio 6 - Esdeveniments: 
+- 6. Afegeix un addEventListener a un botó perquè tregui una alerta (alert).
+**Solución**
+    let botonAlerta = document.querySelector ("#boto-toggle")
+        botonAlerta.addEventListener("click", function() {
         alert("pulsaste el boton toggle");
 });
 
-//7 - Estructura: Crea un nou <li> amb createElement i afegeix-lo a una <ul> amb appendChild.
-
-let botoAfegirItem = document.querySelector("#boto-afegir");
-let llistaCompra = document.querySelector("#llista-compra");
-botoAfegirItem.onclick = function(){
+### 7 - Estructura: 
+- 7. Crea un nou <li> amb createElement i afegeix-lo a una <ul> amb appendChild.
+**Solución**
+    let botoAfegirItem = document.querySelector("#boto-afegir");
+    let llistaCompra = document.querySelector("#llista-compra");
+        botoAfegirItem.onclick = function(){
     let nouitem = document.createElement("li");
-    nouitem.textContent = "formatge";
-    llistaCompra.appendChild(nouitem);
+        nouitem.textContent = "formatge";
+        llistaCompra.appendChild(nouitem);
 }
 
-//8 - Eliminació: Fes que un element desaparegui en fer-li clic usant el mètode remove().
-let cuadroColorSalmon = document.querySelector('#element-eliminar');
-    cuadroColorSalmon.onclick = function() {
-    cuadroColorSalmon.remove();   
+### 8 - Eliminació: 
+Fes que un element desaparegui en fer-li clic usant el mètode remove().
+**Solución**
+let cuadroColorSalmon = document.querySelector                  
+    ('#element-eliminar');
+        cuadroColorSalmon.onclick = function() {
+        cuadroColorSalmon.remove();   
 };
